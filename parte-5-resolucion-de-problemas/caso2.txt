@@ -1,0 +1,12 @@
+Caso 2 Fallo del OCR en producción
+
+Después de lanzar el OCR en producción, se reportan errores en más del 35% de los recibos escaneados (mal reconocimiento de fechas y totales). ¿Cómo abordarías esta situación como líder del área?
+
+El diagnostico del por que puede estar fallando:
+* Entradas esten siendo de resolución baja, borradas o algún otro problema.
+* Esto indicaria tambien que estamos dando un preprocesamiento bajo ya sea por que no hay contraste, problemas con el umbral, grises o desenfocados
+* Tal vez el usuario no entiende que hay que ingresar, eso nos indica un error en la manera en que damos a entender como funciona nuestro producto.
+* El modelo no tiene suficiente variedad en su entrenamiento.
+
+La solución pueden ser muchas, agregar validación a la nitidez, mejorar el preprocesamiento, mostrar instrucciones claras.
+

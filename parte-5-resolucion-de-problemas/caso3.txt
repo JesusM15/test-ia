@@ -1,0 +1,9 @@
+Caso 3 Chatbot con datos erroneos
+
+El chatbot devuelve información desactualizada o incorrecta sobre compradores frecuentes. El modelo NLP funciona, pero las respuestas están mal. ¿Cómo organizarías el diagnóstico y corrección?
+
+Mi diagnostico seria primero plantear las posibles causas de que no funcione, si la fuente de donde obtengo mis datos esta desactualizada, cacheo agresivo, mal uso de los resultados, tabla de comparadores incompleta.
+
+Una estrategia a tomar seria, hacer test de regresion sobre el intent detection y los datos. Validar que los datos mostrados provengan de fuentes confiables validas y actualizadas.
+
+Agregar una tarea de segundo plano ques actualice la DB.
